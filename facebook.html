@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook</title>
+        <link rel = "shortcut icon" href="Facebookicon.png" />
+        <style>
+            body {
+                background-color: #eaeaea;
+                position: relative;
+                min-height: 100vh;
+                margin: 0;
+                padding: 0;
+                font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            }
+
+            
+            h1{
+               color: #3b5998;
+               font-size: 60px;
+               font-weight: bold;
+            }
+
+            li{
+                position: relative;
+                margin-right: 15px;
+                display: inline;
+            }
+
+            li:hover{
+                text-decoration: underline;
+            }
+
+            input{
+                border-radius: 5px;
+                width: 70%;
+                border: 1px solid #dddfe2;
+                padding: 10px 10px;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 20px;
+            }
+
+            input[type=text]:focus {
+                outline: 1px solid lightblue;
+              } 
+
+            button:hover{
+                text-decoration: underline;
+            }
+
+            .bottom-info-list{
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .info-lang{
+                position: relative;
+            }
+
+            .info-lang::after {
+                content: ''; 
+                position: absolute;
+                bottom: -7px; 
+                left: 0;
+                width: 100%; 
+                border-bottom: 1px solid #dddfe2;
+            }
+            
+            #more-lang-pic{
+                position: relative;
+
+                width: 12px;
+                top: 1px;
+            }
+
+            #corp-text{
+                font-size: 10px;
+            }
+
+            #bottom-block{
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+                font-size: 14px;
+                color: #9e9b9b;
+                overflow: auto;
+                /*comment test*/
+            }
+
+            #main-block{
+                position: absolute;
+                margin: 7% 15%;
+            }
+
+            #bottom-block-info{
+                font-size: 14px;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+
+            #welcome{
+                margin-top: 3.5%;
+                margin-right: 10%;
+                width: 35%;
+                float:left
+            }
+
+            #welcome-text{
+                font-size: 25px;
+                margin-top: -30px;
+            }
+
+            #login{
+                width: 60%;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+                text-align: center;
+                padding: 20px;
+            }
+
+            #login-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            #loginbtn{
+                padding:10px;
+                color: white;
+                background-color: #3b5998;
+                margin-top: 20px;
+                border:none;
+                border-radius: 5px;
+                width: 75%;
+            }
+
+            #loginbtn:focus{
+                outline: none;
+            }
+
+            #forgetpswrdbtn{
+                padding:10px;
+                color: darkblue;
+                background-color: transparent;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+                border:none;
+                width: 75%;
+
+                border-bottom:1px solid #dddfe2 ;
+            }
+
+            #forgetpswrdbtn:focus{
+                outline: none;
+            }
+
+            #newaccbtn{
+                padding:10px;
+                color: white;
+                background-color: darkgreen;
+                border:none;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                width: 45%;
+            }
+
+            #make-pagebtn{
+                background-color: transparent;
+                border: none;
+            }   
+
+            #make-pagebtn:focus{
+                outline: none;
+            }
+
+            #login-text{
+                font-size: 14px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id ="bottom-block">
+            <div id = "bottom-block-info">
+                <ul class = "bottom-info-list info-lang" >
+                    <li>Русский</li>
+                    <li>English</li>
+                    <li>Қазақша</li>
+                    <li>Piratish</li>
+                    <li>Español</li>
+                    <li>Bahasa Indonesia</li>
+                    <li>Português (Brasil)</li>
+                    <li> ℸ ̣ ᔑʖꖎᒷ</li>
+                    <li><img src="plus.png" alt="Plus" id = "more-lang-pic"></li>
+                </ul>
+                <ul class = "bottom-info-list">
+                    <li>Регистрация</li>
+                    <li>Вход</li>
+                    <li>Messenger</li>
+                    <li>Facebook lite</li>
+                    <li>Видео</li>
+                    <li>Места</li>
+                    <li>Игры</li>
+                    <li>Marketplace</li>
+                    <li>Meta Play</li>
+                    <li>Meta Store</li>
+                    <li>Meta Quest</li>
+                    <li>Meta IdkWhatElse</li>
+                    <li>Услуги</li>
+                    <li>Вакансии</li>
+                    <li>Информация</li>
+                    <li>Справка</li>
+                    <li>Реклама</li>
+                    <li>Cookies</li>
+                    <li>Разработчикам</li>
+                    <li>Информация</li>
+                    <li>Группы</li>
+                    <li>Создать страницу</li>
+                </ul>
+                <p id="corp-text">Meta © 2024</p>
+            </div>
+        </div>
+        
+        <div id="main-block">
+            <div id="welcome">
+                <h1>facebook</h1>
+                <p id="welcome-text">Facebook помогает всегда оставаться на связи и общаться со своими знакомыми</p>
+            </div>
+            
+        <div id="login-container">
+            <div id="login">
+                <input type="text" placeholder="Введите логин или номер телефона" autofocus = 0>
+                <input type="text" placeholder="Введите пароль" autofocus = 0>
+                <button  id = "loginbtn">Войти</button>
+                <button  id = "forgetpswrdbtn">Забыли пароль?</button>
+                <button id ="newaccbtn">Создать новый аккаунт</button>
+            </div>
+            <p id="login-text"><button id="make-pagebtn"><strong>Создать Страницу</strong></button> знаменитости, музыкальной группы или компании.</p>
+        </div>
+        </div>
+    </body>
+</html>
